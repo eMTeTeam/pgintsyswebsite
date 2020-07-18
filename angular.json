@@ -27,17 +27,15 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/animate.css/animate.min.css",
-              "src/styles.scss",
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/ionicons/css/ionicons.min.css",
               "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/jquery.easing/jquery.easing.min.js",
               "node_modules/aos/dist/aos.js"
             ]
           },
@@ -97,7 +95,6 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
