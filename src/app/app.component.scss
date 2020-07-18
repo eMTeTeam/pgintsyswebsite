@@ -11,6 +11,18 @@
   }
 }
 
+.navbar-toggler {
+  margin-right: 4%;
+}
+
+.navbar-brand {
+  padding-left: 5%;
+}
+
+.navbar-nav {
+  padding-right: 5%;
+}
+
 .navbar {
   height: 80px;
   padding: 0;
@@ -44,6 +56,10 @@
 
     img {
       height: 40px !important;
+    }
+
+    .nav-item {
+      padding-left: 5%;
     }
 
     .nav-link {
@@ -322,6 +338,7 @@ section {
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+  height: 100%;
 }
 
 #about .about-col .img {
@@ -399,6 +416,10 @@ section {
   margin-bottom: 30px;
 }
 
+#services .row {
+  padding-top: 30px;
+}
+
 #services .icon {
   float: left;
 }
@@ -430,6 +451,7 @@ section {
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /* Call To Action Section
@@ -473,6 +495,10 @@ section {
 
 /* Portfolio Details
 --------------------------------*/
+#portfolio {
+  padding: 60px 0 40px 0;
+}
+
 .portfolio-details {
   padding-top: 30px;
 }
@@ -723,14 +749,13 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #000;
-  padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background: #111;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 #footer .footer-top .footer-info {
@@ -878,4 +903,17 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+#footer button {
+  background: #18d26e;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#footer button:hover {
+  background: #13a456;
 }
