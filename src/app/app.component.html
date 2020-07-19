@@ -13,19 +13,19 @@
     <div class="collapse navbar-collapse" id="navbarMenuContent">
       <ul class="navbar-nav ml-auto text-uppercase">
         <li class="nav-item">
-          <a class="nav-link click" (click)="scrollToTarget('.aboutTarget')">About Us</a>
+          <a class="nav-link click" (click)="scrollToTarget('.aboutTarget')" id="aboutus-link">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link click" (click)="scrollToTarget('.serviceTarget')">Services</a>
+          <a class="nav-link click" (click)="scrollToTarget('.serviceTarget')" id="services-link">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link click" (click)="scrollToTarget('.careerTarget')">Careers</a>
+          <a class="nav-link click" (click)="scrollToTarget('.careerTarget')" id="careers-link">Careers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link click" (click)="scrollToTarget('.portfolioTarget')">Products</a>
+          <a class="nav-link click" (click)="scrollToTarget('.portfolioTarget')" id="products-link">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link click" (click)="scrollToTarget('.contactTarget')">Contact us</a>
+          <a class="nav-link click" (click)="scrollToTarget('.contactTarget')" id="contactus-link">Contact us</a>
         </li>
       </ul>
     </div>
@@ -46,7 +46,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src=" ../assets/img/intro.jpg" class="d-block w-100 h-100 intro-img" alt="">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h5 class="title">Welcome To PG INT SYS</h5>
             <p class="caption">Nice To Meet You!</p>
           </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="carousel-item">
           <img src=" ../assets/img/robotics.jpg" class="d-block w-100 h-100 intro-img" alt="">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <p class="caption">“If you think that the internet has changed your life, think again. The Internet of
               Things is about to change it all over again"</p>
           </div>
@@ -333,7 +333,7 @@
       </div>
 
       <div class="form">
-        <form action="" method="post" role="form" class="email-form">
+        <div class="email-form">
           <div class="form-row">
             <div class="form-group col-md-6">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
@@ -356,13 +356,8 @@
               data-msg="Please write something for us" placeholder="Message"></textarea>
             <div class="validate"></div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
           <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
+        </div>
       </div>
 
     </div>
@@ -384,7 +379,7 @@
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Links</h4>
           <ul>
             <li class="click" (click)="scrollToTop()"><i class="ion-ios-arrow-right"></i> <a>Home</a>
             </li>
@@ -411,11 +406,11 @@
           </p>
 
           <div class="social-links">
-            <a class="twitter"><i class="fa fa-twitter"></i></a>
-            <a class="facebook"><i class="fa fa-facebook"></i></a>
-            <a class="instagram"><i class="fa fa-instagram"></i></a>
-            <a class="google-plus"><i class="fa fa-google-plus"></i></a>
-            <a class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a class="twitter click"><i class="ion-social-twitter"></i></a>
+            <a class="facebook click"><i class="ion-social-facebook"></i></a>
+            <a class="instagram click"><i class="ion-social-instagram"></i></a>
+            <a class="google-plus click"><i class="ion-social-google"></i></a>
+            <a class="linkedin click"><i class="ion-social-linkedin"></i></a>
           </div>
 
         </div>
