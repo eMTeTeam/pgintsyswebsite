@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -8,14 +10,14 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: $primary-color;
   transition: 0.5s;
 }
 
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: $highlight-color;
   outline: none;
   text-decoration: none;
 }
