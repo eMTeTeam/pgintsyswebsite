@@ -465,21 +465,20 @@ section {
   padding-top: 30px;
 }
 
-#services .icon {
-  float: left;
+#services .icon-container {
+  text-align: center;
+  margin: auto;
 }
 
 #services .icon i {
   color: $primary-color;
-  font-size: 36px;
+  font-size: 42px;
   line-height: 1;
   transition: 0.5s;
 }
 
 #services .title {
-  margin-left: 50px;
   font-weight: 700;
-  margin-bottom: 15px;
   font-size: 18px;
 }
 
@@ -491,10 +490,6 @@ section {
   color: $primary-color;
 }
 
-#services .box .icon {
-  margin-top: -5px;
-}
-
 #services .description {
   font-size: 14px;
   margin-left: 50px;
@@ -504,43 +499,104 @@ section {
   padding-right: 10px;
 }
 
+#services .card {
+  border: none !important;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  height: 102px !important;
+}
+
+#services .card:hover {
+  box-shadow: 0px 2px 8px $highlight-color;
+  .title {
+    color: $highlight-color !important;
+  }
+}
+
+#services .card-body {
+  padding: 0.8rem !important;
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 0;
+  }
+}
+
 /* Call To Action Section
 --------------------------------*/
-#call-to-action {
+#trainings {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)),
     url(../assets/img/bck.jpeg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
-#call-to-action h3 {
+#trainings .section-title {
+  text-align: center;
+}
+
+#trainings h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
-#call-to-action p {
+#trainings p {
   color: #fff;
 }
 
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
+#trainings .row {
+  padding-top: 30px;
+}
+
+#trainings .box {
+  margin-bottom: 30px;
+}
+
+#trainings .icon-container {
+  text-align: center;
+  margin: auto;
+}
+
+#trainings .icon i {
+  color: $primary-color;
+  font-size: 42px;
+  line-height: 1;
   transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
 }
 
-#call-to-action .cta-btn:hover {
-  background: $primary-color;
-  border: 2px solid $primary-color;
+#trainings .title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#trainings .title a {
+  color: #111;
+}
+
+#trainings .card {
+  border: none !important;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  height: 102px !important;
+}
+
+#trainings .card:hover {
+  box-shadow: 0px 2px 8px $highlight-color;
+  .title {
+    color: $highlight-color !important;
+  }
+}
+
+#trainings .card-body {
+  padding: 0.8rem !important;
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 0;
+  }
 }
 
 /* Portfolio Details
