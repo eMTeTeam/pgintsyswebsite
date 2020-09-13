@@ -14,10 +14,12 @@ export class AppComponent implements OnInit {
 
   services: Array<any> = [];
   trainings: Array<any> = [];
+  recruitments: Array<any> =[];
 
   constructor() {
     this.loadServices();
     this.loadTrainings();
+    this.loadRecruitments();
   }
 
   ngOnInit() {
@@ -65,11 +67,11 @@ export class AppComponent implements OnInit {
   loadServices = () => {
     this.services = [
       { icon: 'ion-ios-world-outline', title: 'Mobile & Web Development', caption: 'Native & Hybrid Application development' },
-      { icon: 'ion-ios-paper-outline', title: 'Data Science', caption: 'Data mining, machine learning and big data' },
+      { icon: 'ion-ios-paper-outline', title: 'AI & Data Science', caption: 'Data mining, machine learning and big data' },
       { icon: 'ion-ios-grid-view-outline', title: 'IOT', caption: 'Embedded with sensors and exchange data' },
       { icon: 'ion-ios-cloud-outline', title: 'Cloud Computing', caption: 'Data centers available to many users over the Internet.' },
       { icon: 'ion-ios-locked-outline', title: 'Cybersecurity & Block chain', caption: 'High level security for any software over internet' },
-      { icon: 'ion-ios-color-wand-outline', title: 'Digital Transformation IR4.0', caption: 'Data exchange in manufacturing technologies' },
+      { icon: 'ion-ios-color-wand-outline', title: 'Digital Transformation/IR4.0', caption: 'Transfrom your business process/Data exchange in manufacturing technologies' },
       { icon: 'ion-ios-barcode-outline', title: 'Information Security Management', caption: 'Information Security Management' },
       { icon: 'ion-ios-speedometer-outline', title: 'Cost Reduction & Process Improvement', caption: 'Make your organization more effective' },
       { icon: 'ion-ios-navigate-outline', title: 'Robot and Drone', caption: 'Metaphorical software robots or on artificial intelligence /digital workers' }
@@ -87,6 +89,17 @@ export class AppComponent implements OnInit {
       { icon: 'ion-ios-book-outline', title: 'Java Development', caption: 'Java Development' },
       { icon: 'ion-ios-book-outline', title: 'Lean Six Sigma', caption: 'Lean Six Sigma' },
       { icon: 'ion-ios-book-outline', title: 'Marketing, Leadership etc ', caption: 'Marketing, Leadership etc ' }
+    ];
+  }
+
+  loadRecruitments = () => {
+    this.recruitments = [
+      { icon: 'ion-ios-book-outline', title: 'Education', caption: 'IR4.0 opportunities and challenges' },
+      { icon: 'ion-ios-book-outline', title: 'Shared Services', caption: 'IOT & Robotic System' },
+      { icon: 'ion-ios-book-outline', title: 'Information Technology', caption: 'Program Logic Controller' },
+      { icon: 'ion-ios-book-outline', title: 'Health Care', caption: 'Arduino/ Raspberry PI' },
+      { icon: 'ion-ios-book-outline', title: 'Manufacturing', caption: '3D Design and Printer' },
+      { icon: 'ion-ios-book-outline', title: 'Banking, Finance & Tax', caption: 'AI & Python' },
     ];
   }
 

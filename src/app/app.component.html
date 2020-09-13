@@ -22,6 +22,9 @@
           <a class="nav-link click" (click)="scrollToTarget('.trainingTarget')" id="careers-link">Trainings</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.trainingTarget')" id="careers-link">Recruitment</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link click" (click)="scrollToTarget('.portfolioTarget')" id="products-link">Products</a>
         </li>
         <li class="nav-item">
@@ -90,8 +93,7 @@
         <div class="col-lg-4 box box-bg">
           <i class="ion-ios-body-outline"></i>
           <h4 class="title"><a>Trainings</a></h4>
-          <p class="description">Trainings are co-organized with IEEE SMC (System Man & Cybernetics) Malaysia
-            Society</p>
+          <p class="description">HRDF Training provider, offers training in technical and non-technical areas. It is supported by IEEE SMC (System Man & Cybernetics) Malaysia chapter.</p>
         </div>
 
         <div class="col-lg-4 box">
@@ -210,6 +212,35 @@
     </div>
   </section><!-- End Call To Action Section -->
 
+   <!-- ======= Recruitment ======= -->
+   <section id="trainings" class="trainingTarget">
+    <div class="container" data-aos="zoom-in">
+      <h3 class="section-title text-uppercase">Recruitment & Contract Staffing</h3>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100"
+          *ngFor="let t of recruitments; let i = index">
+          <div class="card">
+            <div class="row no-gutters padding-none">
+              <div class="col-2 icon-container">
+                <div class="icon"><i class="{{t.icon}}"></i></div>
+              </div>
+              <div class="col-10">
+                <div class="card-body">
+                  <h5 class="title">{{t.title}}</h5>
+                  <!-- <p>{{t.caption}}</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Call To Action Section -->
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="section-bg portfolioTarget">
     <div class="container" data-aos="fade-up">
@@ -286,7 +317,7 @@
             <i class="ion-ios-location-outline"></i>
             <h3>Address</h3>
             <address>No 9, Jalan PJS 8/9. Bandar Sunway
-              46150 Petaling Jaya, Selangor.</address>
+              46150 Petaling Jaya, Selangor, Malaysia.</address>
           </div>
         </div>
 
@@ -337,8 +368,10 @@
               <a>Services</a></li>
             <li class="click" (click)="scrollToTarget('.trainingTarget')"><i class="ion-ios-arrow-right"></i>
               <a>Trainings</a></li>
-            <li class="click" (click)="scrollToTarget('.portfolioTarget')"><i class="ion-ios-arrow-right"></i>
-              <a>Products</a></li>
+              <li class="click" (click)="scrollToTarget('.trainingTarget')"><i class="ion-ios-arrow-right"></i>
+                <a>Recruitment</a></li>
+              <li class="click" (click)="scrollToTarget('.')"><i class="ion-ios-arrow-right"></i>
+                <a>Products</a></li>
           </ul>
         </div>
 
@@ -348,7 +381,7 @@
             PG INTSYS SDN BHD
             No:1036, Block A3, Leisure Commerce Square
             No 9, Jalan PJS 8/9. Bandar Sunway
-            46150 Petaling Jaya, Selangor. <br>
+            46150 Petaling Jaya, Selangor, Malaysia. <br>
             <strong>Phone:</strong> +60 17-950 0361<br>
             <strong>Email:</strong> <a href="mailto:info@pgintsys.com"> info@pgintsys.com</a><br>
           </p>
@@ -367,6 +400,9 @@
           <h4>Work With Us</h4>
           <p>Strive to be the preferred recruitment partner to our clients.</p>
           <a href="mailto:job@pgintsys.com" type="submit">Submit Resume</a>
+          
+          <img src="assets/logo/training.jpeg" class="d-block w-60 h-60" style="width: 60%;margin:15px;" alt="">
+
         </div>
 
       </div>
