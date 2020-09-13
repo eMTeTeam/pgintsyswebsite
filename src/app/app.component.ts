@@ -94,12 +94,12 @@ export class AppComponent implements OnInit {
 
   loadRecruitments = () => {
     this.recruitments = [
-      { icon: 'ion-ios-book-outline', title: 'Education', caption: 'IR4.0 opportunities and challenges' },
-      { icon: 'ion-ios-book-outline', title: 'Shared Services', caption: 'IOT & Robotic System' },
-      { icon: 'ion-ios-book-outline', title: 'Information Technology', caption: 'Program Logic Controller' },
-      { icon: 'ion-ios-book-outline', title: 'Health Care', caption: 'Arduino/ Raspberry PI' },
-      { icon: 'ion-ios-book-outline', title: 'Manufacturing', caption: '3D Design and Printer' },
-      { icon: 'ion-ios-book-outline', title: 'Banking, Finance & Tax', caption: 'AI & Python' },
+      { icon: 'ion-ios-paper', title: 'Education', caption: 'IR4.0 opportunities and challenges' },
+      { icon: 'ion-ios-people', title: 'Shared Services', caption: 'IOT & Robotic System' },
+      { icon: 'ion-android-desktop', title: 'Information Technology', caption: 'Program Logic Controller' },
+      { icon: 'ion-ios-medkit', title: 'Health Care', caption: 'Arduino/ Raspberry PI' },
+      { icon: 'ion-ios-briefcase', title: 'Manufacturing', caption: '3D Design and Printer' },
+      { icon: 'ion-cash', title: 'Banking, Finance & Tax', caption: 'AI & Python' },
     ];
   }
 
